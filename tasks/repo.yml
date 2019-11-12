@@ -8,8 +8,8 @@
 
 - name: Install gpg key
   apt_key:
-    url: http://packagecloud.io/gpg.key
-    id: 418A7F2FB0E1E6E7EABF6FE8C2E73424D59097AB
+    url: https://packagecloud.io/librato/librato-collectd/gpgkey
+    id: B83E13B25EA683E71C17FFA0BDBDCC081E77728D
     state: present
   when: ansible_os_family == 'Debian'
 
